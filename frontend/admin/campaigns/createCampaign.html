@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Campaign</title>
+  <link rel="stylesheet" href="createCampaign.css">
+</head>
+<body>
+  <div class="header-container">
+    <h1>Fund Your Dreams</h1>
+    <header>
+        <a href="./allCampaigns.html">Browse campaigns</a>
+        <a href="../transactions/allTransactions.html">Campaign Transactions</a>
+        <a href="../users/allUsers.html">Users</a>
+            <a href="../about.html">About Us</a>
+        <a id="authLink" href="../login.html">Login</a>
+    </header>
+</div>
+  <div class="container">
+    <h1>Create Campaign</h1>
+    <form id="createCampaignForm" enctype="multipart/form-data">
+      <label for="campaign_title">Campaign Title:</label>
+      <input type="text" id="campaign_title" name="campaign_title" required>
+
+      <label for="campaign_description">Campaign Description:</label>
+      <textarea id="campaign_description" name="campaign_description" required></textarea>
+
+      <label for="target_amount">Target Amount:</label>
+      <input type="number" id="target_amount" name="target_amount" required>
+
+      <label for="funding_deadline">Funding Deadline:</label>
+      <input type="date" id="funding_deadline" name="funding_deadline" required>
+
+      <label for="industry">Industry:</label>
+      <input type="text" id="industry" name="industry" required>
+
+      <label for="is_active">Is Active:</label>
+      <input type="checkbox" id="is_active" name="is_active">
+
+      <label for="current_amount">Current Amount:</label>
+      <input type="number" id="current_amount" name="current_amount">
+
+      <label for="image">Select Image:</label>
+      <input type="file" id="image" name="image" accept="image/*" required>
+
+      <button type="submit">Create Campaign</button>
+    </form>
+  </div>
+  <script src="createCampaign.js"></script>
+</body>
+</html>

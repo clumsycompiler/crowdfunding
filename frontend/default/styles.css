@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    /* font-size:30px ; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url("images/hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+  
+  .hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .how-it-works-container {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-rows: repeat(4, 100px);
+    text-align: center;
+    margin: 20px;   
+  }
+/* featured campaign section start */
+.featured-campaign {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    width: 300px; /* Adjust width as needed */
+    display: inline-block; /* Allows cards to sit side-by-side */
+    vertical-align: top; /* Ensures cards with different heights align at top */
+  }
+  
+  .featured-campaign img {
+    width: 100%; /* Fills the card width */
+    border-radius: 5px; /* Matches card border radius */
+    margin-bottom: 10px;
+  }
+  
+  .featured-campaign h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .featured-campaign p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  
+  .featured-campaign .progress-bar {
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    /* overflow: hidden; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 2rem; */
+  }
+      
+  .featured-campaign .progress-bar .progress-info {
+    align-self: flex-start;
+  }
+  .featured-campaign .progress {
+    height: 100%;
+    background-color: #4CAF50; /* Adjust color based on funding progress */
+    border-radius: 5px;
+    /* align-self: flex-start; Aligns elements to the start (left in LTR languages) */
+  }
+  
+  .featured-campaign .progress-bar span {
+    float: right;
+    line-height: 10px;
+  }
+  
+  .featured-campaign a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    display: block; /* Makes the button fill the card width */
+    margin-top: 10px;
+  }
+/* featured campaign section end */
+
+/* campaign creation page section start  */
+.start-campaign {
+    padding: 50px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .start-campaign h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .start-campaign form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 60%;
+  }
+  
+  .start-campaign h3 {
+    margin-bottom: 15px;
+  }
+  
+  .start-campaign .form-group {
+    margin-bottom: 15px;
+    width: 100%; /* Make each field full width */
+  }
+  
+  .start-campaign .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .start-campaign input[type="text"],
+  .start-campaign input[type="number"],
+  .start-campaign textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Ensures padding doesn't shrink content width */
+  }
+  
+  .start-campaign button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .start-campaign button:hover {
+    background-color: #3e8e41;
+  }
+/* end */
+/* registration start */
+.registration {
+    padding: 50px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 400px; /* Adjust width as needed */
+  }
+  
+  .registration h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .registration form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  
+  .registration .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .registration .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .registration input[type="text"],
+  .registration input[type="email"],
+  .registration input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  .registration button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .registration button:hover {
+    background-color: #3e8e41;
+  }
+/* registration end */
+
+  .how-it-works-item {
+    text-align: center;
+    margin: 20px;
+  } 
+
+  .about-us {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .about-us p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .team-member img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  

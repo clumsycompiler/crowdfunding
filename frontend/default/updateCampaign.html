@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Campaign</title>
+    <link rel="stylesheet" href="updateCampaign.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fund Your Dreams</h1>
+      <a href="./createCampaign.html">Start Your Campaign</a>
+      <a href="./allCampaigns.html">Browse campaigns</a>
+      <a href="./about.html">About Us</a>
+    <a href="./login.html">Login</a>
+
+    </header>
+    <div class="container">
+      <h1>Update Campaign</h1>
+      <form id="updateCampaignForm">
+        <label for="campaignTitle">Campaign Title</label>
+        <input type="text" id="campaignTitle" name="campaign_title" />
+
+        <label for="campaignDescription">Campaign Description</label>
+        <textarea
+          id="campaignDescription"
+          name="campaign_description"
+        ></textarea>
+
+        <label for="targetAmount">Target Amount</label>
+        <input type="number" id="targetAmount" name="target_amount" />
+
+        <label for="fundingDeadline">Funding Deadline</label>
+        <input type="date" id="fundingDeadline" name="funding_deadline" />
+
+        <label for="industry">Industry</label>
+        <input type="text" id="industry" name="industry" />
+
+        <label for="isActive">Is Active</label>
+        <input type="checkbox" id="isActive" name="is_active" />
+
+        <label for="currentAmount">Current Amount</label>
+        <input type="number" id="currentAmount" name="current_amount" />
+
+        <label for="image">Image</label>
+        <input type="file" id="imageInput" name="image" />
+        <img id="currentImage" src="" alt="Current Image" />
+
+        <button type="submit">Update Campaign</button>
+      </form>
+    </div>
+    <script src="updateCampaign.js"></script>
+  </body>
+</html>

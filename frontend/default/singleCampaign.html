@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campaign Details</title>
+    <link rel="stylesheet" href="singleCampaign.css" />
+  </head>
+  <body>
+    <div class="header-container">
+      <h1>Administration</h1>
+      <header>
+        <a href="./createCampaign.html">Start Your Campaign</a>
+        <a href="./allCampaigns.html">Browse campaigns</a>
+        <a href="./about.html">About Us</a>
+        <a id="authLink" href="./login.html">Login</a>
+      </header>
+    </div>
+
+    <div class="container">
+      <h1>Campaign Details</h1>
+      <div id="campaignDetails"></div>
+      <div id="transactionsContainer">
+        <h1>Transactions</h1>
+        <table id="transactionsTable">
+          <thead>
+            <tr>
+              <th>Transaction ID</th>
+              <th>Payment Method</th>
+              <th>Transaction Date</th>
+              <th>Transaction Status</th>
+              <th>Transaction Amount</th>
+              <th>Sender ID</th>
+              <th>Campaign ID</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Transactions will be inserted here by JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="singleCampaign.js"></script>
+  </body>
+</html>

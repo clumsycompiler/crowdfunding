@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Campaign</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+    <link rel="stylesheet" href="./fundCampaign.css">
+</head>
+<body>
+    <div class="header-container">
+        <h1>Fund Your Dreams</h1>
+        <header>
+            <a href="./allCampaigns.html">Browse campaigns</a>
+            <a href="./about.html">About Us</a>
+        </header>
+    </div>
+    <div class="container">
+        <h1>Fund Campaign</h1>
+        <div>
+            <label for="payment-method">Select Payment Method:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="">--Select--</option>
+                <option value="card">Card</option>
+                <option value="mpesa">Mpesa</option>
+            </select>
+        </div>
+
+        <div id="card-form" class="payment-form" style="display: none;">
+            <h2>Card Payment</h2>
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required>
+            <label for="card-expiry">Expiry Date:</label>
+            <input type="text" id="card-expiry" name="card-expiry" required>
+            <label for="card-cvv">CVV:</label>
+            <input type="text" id="card-cvv" name="card-cvv" required>
+            <label for="card-amount">Amount:</label>
+            <input type="number" id="card-amount" name="card-amount" required>
+            <button onclick="processCardPayment()">Pay with Card</button>
+        </div>
+
+        <div id="mpesa-form" class="payment-form" style="display: none;">
+            <h2>Mpesa Payment</h2>
+            <label for="mpesa-number">Mpesa Number:</label>
+            <input type="text" id="mpesa-number" name="mpesa-number" required>
+            <label for="mpesa-amount">Amount:</label>
+            <input type="number" id="mpesa-amount" name="mpesa-amount" required>
+            <button onclick="processMpesaPayment()">Pay with Mpesa</button>
+        </div>
+    </div>
+
+    <script src="./fundCampaign.js"></script>
+</body>
+</html>

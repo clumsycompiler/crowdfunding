@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fund Your Dreams | SME Crowdfunding Platform</title>
+    <link rel="stylesheet" type="text/css" href="./registration.css" />
+    <!-- use  zxcvbn for password validation-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+  </head>
+  <body>
+    <div class="header-container">
+      <h1 onclick="window.location.href='home'">SME Crowdfunding</h1>
+      <header>
+      <a href="./createCampaign.html">Create New Campaign</a>
+      <a href="./about.html">About Us</a>
+      <a id="authLink"  href="./login.html">Login</a>
+      </header>
+      </div>
+    <div class="signUpContainer">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <p class="password-requirements">Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character.</p>
+        <input type="password" id="password" name="password" required />
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required />
+
+        <label for="account_type">Account Type:</label>
+        <select id="account_type" name="account_type" required>
+          <option value="investor">Investor</option>
+          <option value="entrepreneur">Entrepreneur</option>
+        </select>
+
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="./login.html">Login here</a></p>
+    </div>
+
+    <script src="./registration.js"></script>
+  </body>
+</html>

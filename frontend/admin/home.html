@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdfunding for SMEs</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+      <div class="header-container">
+    <h1>Fund Your Dreams</h1>
+    <header>
+    <a href="./campaigns/allCampaigns.html">Start Your Campaign</a>
+        <a href="./about.html">About Us</a>
+    <a id="authLink"  href="./login.html">Login</a>
+    </header>
+    </div>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Empower Your SME</h1>
+            <p>Join us in funding innovative SMEs</p>
+            <button class="cta-button" onclick="window.location.href='#guide'">Learn How</button>
+            <button class="cta-button" onclick="window.location.href='./campaigns/allCampaigns'">View Campaigns</button>
+        </div>
+    </div>
+
+    <section id="guide" class="guide">
+        <h2>How to Fund & Create a Campaign</h2>
+        <div class="guide-content">
+            <div class="guide-step">
+                <h3>Fund a Campaign</h3>
+                <p>1. Browse campaigns</p>
+                <p>2. Select a campaign</p>
+                <p>3. Make a donation</p>
+            </div>
+            <div class="guide-step">
+                <h3>Create a Campaign</h3>
+                <p>1. Sign up or log in</p>
+                <p>2. Create your campaign</p>
+                <p>3. Share with your network</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="campaigns" class="campaigns">
+        <h2>Current Campaigns</h2>
+        <div class="campaign-list">
+            <div class="campaign">
+                <h3>Campaign 1</h3>
+                <p>Description of Campaign 1</p>
+            </div>
+            <div class="campaign">
+                <h3>Campaign 2</h3>
+                <p>Description of Campaign 2</p>
+            </div>
+            <div class="campaign">
+                <h3>Campaign 3</h3>
+                <p>Description of Campaign 3</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./home.js"></script>
+</body>
+</html>

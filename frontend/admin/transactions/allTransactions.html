@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transactions</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+    <link rel="stylesheet" href="./allTransactions.css" />
+  </head>
+  <body>
+    <div class="header-container">
+      <h1>Administration</h1>
+      <header>
+        <a href="../campaigns/allCampaigns.html">Campaigns</a>
+        <a href="../users/allUsers.html">Users</a>
+        <a href="../about.html">About Us</a>
+        <a id="authLink" href="./login.html">Login</a>
+      </header>
+    </div>
+
+    <div class="container">
+      <h1>Transactions</h1>
+      <button onclick="generatePDF()" id="generatepdfbtn">Download PDF</button>
+      <table id="transactionsTable">
+        <thead>
+          <tr>
+            <th>Transaction ID</th>
+            <th>Payment Method</th>
+            <th>Transaction Date</th>
+            <th>Transaction Status</th>
+            <th>Transaction Amount</th>
+            <th>Sender ID</th>
+            <th>Campaign ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Transactions will be inserted here by JavaScript -->
+        </tbody>
+      </table>
+    </div>
+    <script src="./allTransactions.js"></script>
+  </body>
+</html>

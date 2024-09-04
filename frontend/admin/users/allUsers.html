@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+    <link rel="stylesheet" href="allUsers.css">
+</head>
+<body>
+    <h1>Administration</h1>
+    <header>
+        <a href="../campaigns/allCampaigns.html">Campaigns</a>
+        <a href="../transactions/allTransactions.html">Campaign Transactions</a>
+        <a href="../about.html">About Us</a>
+        <a id="authLink"  href="./login.html">Login</a>
+      </header>
+    <div class="container">
+        <h1>User List</h1>
+        <button onclick="generatePDF()">Download PDF</button>
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Location</th>
+                    <th>Account Type</th>
+                    <th>Registration Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userList">
+                <!-- User rows will be appended here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="allUsers.js"></script>
+</body>
+</html>
